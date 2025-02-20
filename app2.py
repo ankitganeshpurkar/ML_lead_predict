@@ -9,7 +9,7 @@ from rdkit.Chem import Descriptors
 from rdkit.ML.Descriptors import MoleculeDescriptors
 
 
-st.write(""" # AlzLeads : A Web Application for Prediction of Inhibitor for Alzheimer's Disease   """)
+st.write(""" # A Web Application for Prediction of Inhibitor for Alzheimer's Disease   """)
 result = [2]
 
 user_input = st.text_input("Enter the SMILES string", ' ')
