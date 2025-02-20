@@ -20,7 +20,7 @@ try:
     header = list(calc.GetDescriptorNames())
     d2 = list(calc.CalcDescriptors(mol))
     d = {x:y for x,y in zip(header, d2)}
-    df_des =  df_des.append(d, ignore_index = True)
+    df_des = pd.concat([df_des, pd.DataFrame([d])], ignore_index=True)
     
 except:
     result = [-1]
